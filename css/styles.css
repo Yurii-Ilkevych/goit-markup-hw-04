@@ -528,6 +528,11 @@ fill: currentColor;
  fill: var(--accent-color);   
 }
 
+.social-botton .customers .link {
+    display: block;
+    width: 168px;
+    height: 88px;
+}
 
 /* footer сайта */ 
 
