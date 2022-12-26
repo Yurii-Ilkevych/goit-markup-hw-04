@@ -147,6 +147,7 @@ margin-left: 40px;
 
 /* Секция герой 1 */
 .section-hero {
+
     /* background-image: linear-gradient(to right,
     rgba(255,0,0,0.5),
     rgba(0,0,255,0.5)
@@ -158,13 +159,14 @@ margin-left: 40px;
     rgba(47,48,58,0.8)
     ),
     url(../images/people-office.jpg);
-background-size:cover;
+max-width: 1440px;
+background-size: auto;
 background-color: var(--title-text-color);
-
     text-align: center;
     padding-top: 192px;
     padding-bottom: 192px;
-  
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* .hero-image {
@@ -260,7 +262,7 @@ button {
 
 .social-botton {
     display: flex;
-    margin-left: 16px;
+    justify-content: center;
   padding-bottom: 36px;
 
 }
@@ -420,6 +422,18 @@ border-radius: 0px 0px 4px 4px;
 } */
 
 
+.list-li .box {
+    width: 264px;
+    height: 112px;
+    background-color: var(--button-primary-color);
+    margin-bottom: 8px;
+    
+}
+
+.icon-box {
+margin-left: 100px;
+margin-top: 24px;
+}
 
 .section .list-card:nth-child(3n) {
 
@@ -522,16 +536,31 @@ fill: currentColor;
     border: 1px solid var(--accent-color)
 
 }
-.customers .icon:hover,
-.customers .icon:focus {
+.link:hover .icon,
+.link:focus .icon {
 
- fill: var(--accent-color);   
+ fill: #404BBF;   
 }
+
 
 .social-botton .customers .link {
     display: block;
     width: 168px;
     height: 88px;
+}
+
+
+.link .soc-icon {
+color: var(--accent-color);
+}
+
+.link .soc-icon {
+fill: currentColor;
+}
+
+.link:hover .soc-icon,
+.link:focus .soc-icon {
+    fill: #404BBF;
 }
 
 /* footer сайта */ 
@@ -551,12 +580,14 @@ padding-top: 100px;
     color: var(--white-color)
 }
 .footer-title {
-display: inline;
+display: block;
  color: var(--button-primary-color) ;  
  font-size: 16px;
 line-height: 1.5; 
 margin-top: 16px;
-margin-right: 120px;
+
+width: 264px;
+height: 72px;
 }
 
 .footer-text {
@@ -571,13 +602,9 @@ margin-bottom: 16px;
 }
 
 .footer-box {
-    display: flex;
-    align-items: center;
+ display: flex;
 }
 
-.footer-box .logo {
-    margin-right: 269px;
-}
 
 
 .footer-button {
@@ -649,3 +676,8 @@ margin-bottom: 16px;
     padding-bottom: 0;
     padding-left: 0;
 }
+
+.margin-right {
+    margin-right: 120px;
+}
+
